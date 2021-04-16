@@ -1,7 +1,8 @@
 <div class="row">
   <div *ngFor="let l of lists"
        class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    Name {{l.name}}
-
+    <mat-card class="list">
+      {{l.date}}, {{l.name}}
+    </mat-card>
   </div>
 </div>

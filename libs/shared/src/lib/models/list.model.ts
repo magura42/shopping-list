@@ -1,4 +1,4 @@
-import { IsNumber, IsOptional, IsString } from 'class-validator';
+import {IsDateString, IsNumber, IsOptional, IsString} from 'class-validator';
 
 export class List {
 
@@ -8,4 +8,7 @@ export class List {
 
   @IsString()
   name: string;
+
+  @IsDateString()
+  date: string
 }

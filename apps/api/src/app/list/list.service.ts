@@ -8,12 +8,15 @@ export class ListService {
     return [
       {
         name: 'list1',
+        date: '2021-04-21',
       },
       {
         name: 'list2',
+        date: '2021-04-22',
       },
       {
         name: 'list3',
+        date: '2021-04-23',
       },
     ]
 
