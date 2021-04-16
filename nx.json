@@ -1,36 +1,21 @@
 {
   "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     ".eslintrc.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "shopping-list",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
   "projects": {
-    "shopp-it": {
-      "tags": []
-    },
-    "shopp-it-e2e": {
-      "tags": [],
-      "implicitDependencies": ["shopp-it"]
-    },
-    "api": {
-      "tags": []
-    },
-    "api-interfaces": {
-      "tags": []
-    }
+    "shopp-it": { "tags": [] },
+    "shopp-it-e2e": { "tags": [], "implicitDependencies": ["shopp-it"] },
+    "api": { "tags": [] },
+    "api-interfaces": { "tags": [] },
+    "shared": { "tags": [] }
   }
 }

@@ -8,6 +8,6 @@ import { Message } from '@shopping-list/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
+  title = 'Mannis Shopping List App'
   constructor(private http: HttpClient) {}
 }
