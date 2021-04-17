@@ -9,7 +9,7 @@ export class ListController {
   }
 
   @Get()
-  getLists(): List[] {
+  getLists(): Promise<List[]> {
     return this.listService.getLists()
   }
 }
