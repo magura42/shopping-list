@@ -23,13 +23,13 @@ export class FoodController {
   @Post()
   @HttpCode(201)
   @UsePipes(ValidationPipe)
-  async createFlight(@Body() food: Food): Promise<Food> {
+  async createFood(@Body() food: Food): Promise<Food> {
     return this.foodService.createFood(food);
   }
 
   @Put()
   @UsePipes(ValidationPipe)
-  updateFlight(@Body() food: Food): Promise<Food> {
+  updateFood(@Body() food: Food): Promise<Food> {
     return this.foodService.updateFood(food);
   }
 
