@@ -18,8 +18,8 @@ export class DishController {
   }
 
   @Get()
-  getDish(): Promise<Dish[]> {
-    return this.dishService.getDish();
+  getDishes(): Promise<Dish[]> {
+    return this.dishService.getDishes();
   }
 
   @Get(':id')

@@ -10,7 +10,7 @@ export class DishService {
   constructor(@InjectModel('Dish') private dishModel: Model<DishDocument>) {
   }
 
-  async getDish(): Promise<Dish[]> {
+  async getDishes(): Promise<Dish[]> {
     return this.dishModel.find().exec();
   }
 
@@ -22,8 +22,8 @@ export class DishService {
     throw new NotFoundException();
   }
 
-  async createDish(ingredient: Dish): Promise<Dish> {
-    const newDish = new this.dishModel(ingredient);
+  async createDish(dish: Dish): Promise<Dish> {
+    const newDish = new this.dishModel(dish);
     return newDish.save();
   }
 
