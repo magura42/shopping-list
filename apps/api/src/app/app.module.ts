@@ -8,9 +8,10 @@ import {ListSchema} from "./list/list.schema";
 import { FoodModule } from './food/food.module';
 import {CoreModule} from "./core/core.module";
 import { IngredientModule } from './ingredient/ingredient.module';
+import { DishModule } from './dish/dish.module';
 
 @Module({
-  imports: [ListModule, FoodModule, CoreModule, IngredientModule],
+  imports: [ListModule, FoodModule, CoreModule, IngredientModule, DishModule],
   controllers: [AppController],
   providers: [AppService],
 })
